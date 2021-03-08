@@ -47,5 +47,4 @@ def get_holiday_details(url) -> []:
         print(f'Details collected for country: {get_country_name(url)}')
         return details[1:]
     else:
-        raise NoWikiTableError(
-            f'Can\'t find wikitable for country: {get_country_name(url)}')
+        raise NoWikiTableError
